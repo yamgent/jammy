@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 use bevy::prelude::*;
 use iyes_progress::{Progress, ProgressPlugin, ProgressSystem};
 use jammy::splash_screen::JammySplashScreenPlugin;

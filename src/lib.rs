@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! jammy is a collection of libraries that allows you to quickly prototype
 //! games in bevy. The typical use case is for game jams (hence the name "Jammy").
 #![forbid(unsafe_code)]

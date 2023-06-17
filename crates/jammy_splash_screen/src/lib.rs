@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
+
 //! jammy Splash Screen crate
 //!
 //! This bevy crate allows you to create an initial
