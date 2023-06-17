@@ -14,7 +14,7 @@ members = [
 ]
 
 [dependencies]
-jammy_splash_screen = { path = "./crates/jammy_splash_screen" }
+jammy_splash_screen = { path = "./crates/jammy_splash_screen", version = "0.0.1" }
 
 [dev-dependencies]
 bevy = { version = "0.10.1" }
