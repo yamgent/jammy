@@ -37,11 +37,32 @@ const LOADING_SYMBOL_MARGIN_BOTTOM: f32 = 32.0;
 const LOADING_SYMBOL_SIZE: Vec2 = Vec2::new(64.0, 64.0);
 const LOADING_SYMBOL_COLOR: Color = LOADING_TEXT_COLOR;
 
+/// Spawns an initial loading splash screen during `state`.
+///
+/// # Examples
+///
+/// ```
+/// # use jammy_splash_screen::JammySplashScreenPlugin;
+/// # use bevy::prelude::*;
+///
+/// #[derive(States, Default, Debug, Hash, PartialEq, Eq, Clone)]
+/// enum AppState {
+///     #[default]
+///     Loading,
+/// }
+///
+/// App::new()
+///     .add_state::<AppState>()
+///     .add_plugin(JammySplashScreenPlugin::new(AppState::Loading));
+/// ```
 pub struct JammySplashScreenPlugin<S: States> {
+    /// The state that the splash screen will be created and run.
     pub state: S,
 }
 
 impl<S: States> JammySplashScreenPlugin<S> {
+    /// Creates a new JammySplashScreenPlugin with the splash screen
+    /// created and running during `state`.
     pub fn new(state: S) -> Self {
         Self { state }
     }
