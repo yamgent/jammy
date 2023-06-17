@@ -1,4 +1,19 @@
+[package]
+name = "jammy"
+version = "0.0.1"
+authors = ["Maurice Wangleng Tan <tanwangleng@outlook.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [workspace]
 members = [
-    "crates/*"
+    "crates/*",
 ]
+
+[dependencies]
+jammy_splash_screen = { path = "./crates/jammy_splash_screen" }
+
+[dev-dependencies]
+bevy = { version = "0.10.1" }
+iyes_progress = { version = "0.8" }
