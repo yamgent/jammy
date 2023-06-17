@@ -39,21 +39,11 @@ const LOADING_SYMBOL_COLOR: Color = LOADING_TEXT_COLOR;
 
 pub struct JammySplashScreenPlugin<S: States> {
     pub state: S,
-    // TODO: Is this necessary?
-    pub next_state: Option<S>,
 }
 
 impl<S: States> JammySplashScreenPlugin<S> {
     pub fn new(state: S) -> Self {
-        Self {
-            state,
-            next_state: None,
-        }
-    }
-
-    pub fn continue_to(mut self, next_state: S) -> Self {
-        self.next_state = Some(next_state);
-        self
+        Self { state }
     }
 }
 
