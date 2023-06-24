@@ -1,0 +1,21 @@
+[package]
+name = "jammy"
+version = "0.0.1"
+authors = ["Maurice Wangleng Tan <tanwangleng@outlook.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A collection of libraries that allows you to quicky prototype games in bevy."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "crates/*",
+]
+
+[dependencies]
+jammy_splash_screen = { path = "./crates/jammy_splash_screen", version = "0.0.1" }
+
+[dev-dependencies]
+bevy = { version = "0.10.1" }
+iyes_progress = { version = "0.8" }
